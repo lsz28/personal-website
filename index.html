@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Computer Science Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span>lsz28</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="hero">
+        <div class="stars"></div>
+        <div class="glow-orb"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">lsz28</span></h1>
+            <p class="hero-subtitle">Computer Science Student</p>
+            <p class="hero-description">Curious about computers, algorithms, and the things I can build.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                    Explore My World
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    View Projects
+                </button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- About 区域 -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a computer science student who enjoys understanding how things work and turning ideas into something real.</p>
+                    <p>I spend my time exploring algorithms, building small projects, and learning new technologies. There's something fascinating about writing code that actually solves problems.</p>
+                </div>
+
+                <div class="about-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Problem Solving</span>
+                </div>
+
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="code-body">
+                            <pre><code>$ whoami
+Computer Science Student
+
+$ interests
+[+] Algorithms
+[+] Coding
+[+] Learning
+[+] Building</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills 区域 -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Core programming language for algorithms and system design</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Scripting and rapid prototyping</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Data Structures</h3>
+                    <p>Building efficient and robust solutions</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"></path>
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Algorithms</h3>
+                    <p>Optimizing solutions and understanding complexity</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="19" cy="12" r="1"></circle>
+                            <circle cx="5" cy="12" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3>Problem Solving</h3>
+                    <p>Breaking down complex problems into elegant solutions</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Web Basics</h3>
+                    <p>HTML, CSS, JavaScript fundamentals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects 区域 -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <h2 class="section-title">Things I've Built</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Algorithm Visualization</h3>
+                    </div>
+                    <p class="project-description">An interactive visualization project for exploring algorithms and data structures.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Algorithms</span>
+                        <span class="project-tag">Data Structures</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Pathfinding Playground</h3>
+                    </div>
+                    <p class="project-description">An experimental playground for exploring pathfinding algorithms and obstacle-based navigation.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">A*</span>
+                        <span class="project-tag">Pathfinding</span>
+                    </div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <div class="project-header">
+                        <h3>Something New</h3>
+                    </div>
+                    <p class="project-description">Something new is being built. The best projects are worth waiting for.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact 区域 -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Let's Build Something</h2>
+            
+            <div class="contact-content">
+                <p>I'm always interested in connecting with people who share a passion for technology and building things.</p>
+                
+                <div class="contact-links">
+                    <a href="#" class="contact-link">
+                        <span>GitHub</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span>Email</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>Designed & built with curiosity. © <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <!-- 彩蛋按钮 -->
+    <button class="easter-egg-btn" id="easterEggBtn">?</button>
+
+    <!-- 彩蛋窗口 -->
+    <div class="easter-egg-modal" id="easterEggModal">
+        <div class="easter-egg-content">
+            <h3>Hey, you found something.</h3>
+            <p>This website was built while learning vibe coding.</p>
+            <p style="font-size: 0.9rem; color: #888; margin-top: 1rem;">Every pixel, every animation, every line of code was carefully crafted.</p>
+            <button class="btn btn-small" onclick="closeEasterEgg()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
